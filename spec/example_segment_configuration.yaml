@@ -1,0 +1,51 @@
+# Top level is the name of the on_ramp, this should be short and descriptive
+# Avoid references such as 'new' that quickly lose their relevance. See readme
+# on samples for how to implement the gem, this may help you pick good
+# on_ramp names.
+
+experiment1:
+  # The ramp value is the percentage of users that will participate in the
+  # on_ramp.
+  ramp: 20
+  variants:
+    # There must always be a control variant. In a simple on_ramp, the
+    # control group would have the same code path as 'non-ramped' users.
+    # In a simple on_ramp each variant will have the same % of users.
+    control: 50
+    variant1: 50
+
+# Example configuration for an ABC on_ramp (control plus 2 different
+# variant implementations)
+experiment2:
+  ramp: 70
+  variants:
+    control: 34
+    variant1: 33
+    variant2: 33
+
+# Some more unusual numbers helpful for testing
+experiment3:
+  ramp: 100
+  variants:
+    control: 25
+    variant1: 25
+    variant2: 50
+
+# If you weren't running an on_ramp, but simple wanted to ramp out
+# the release of a on_ramp, you could use a config like this.
+experiment4:
+  ramp: 50
+  variants:
+    control: 100
+
+experiment5:
+  ramp: 50
+  variants:
+    control: 50
+    variant1: 50
+
+experiment6:
+  ramp: 0
+  variants:
+    control: 50
+    variant1: 50
