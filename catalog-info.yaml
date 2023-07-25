@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: on_ramp
+  namespace: usefedora
+  description: ''
+  tags: []
+  annotations:
+    github.com/project-slug: UseFedora/on_ramp
+    backstage.io/techdocs-ref: dir:.
+  links: []
+spec:
+  type: service
+  lifecycle: production
+  owner: Data Engineering
+  heimdall:
+    reportable: false
+    pci: false
+    products: []
+    squads: []
+    impact: ''
