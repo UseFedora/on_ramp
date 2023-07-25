@@ -6,13 +6,13 @@ metadata:
   description: ''
   tags: []
   annotations:
-    github.com/project-slug: Hotmart-Org/on_ramp
+    github.com/project-slug: UseFedora/on_ramp
     backstage.io/techdocs-ref: dir:.
   links: []
 spec:
   type: service
   lifecycle: production
-  owner: Data
+  owner: Data Engineering
   heimdall:
     reportable: false
     pci: false
